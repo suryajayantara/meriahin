@@ -259,7 +259,7 @@
     <!-- Meriahin Section -->
     <div class="team-section animatedParent">
       <p>Created With <span class="animated growIn slowest">❤️</span> By</p>
-      <img class="animated fadeInUpShort" src="asset/img/meriahin.png" alt="">
+      <img class="animated fadeInUpShort" src="{{asset('partama-vera/img/meriahin.png')}}" alt="">
 
     </div>
     <!-- End Of Meriahin -->

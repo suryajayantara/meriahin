@@ -14,6 +14,7 @@ body {
   
 }
 
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -573,7 +574,7 @@ body {
       rgba(0, 0, 0, 0.616),
       rgba(0, 0, 0, 0)
     ),
-    url("/asset/img/footer.png");
+    url("/partama-vera/img/footer.png");
 }
 
 .greeting-section .greeting {
