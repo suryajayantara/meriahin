@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partama & Pera</title>
+  <link rel="shortcut icon" href="asset/img/Group 41.png" type="image/x-icon">
+  <link rel="stylesheet" href="{{asset('/partama-vera/css/style.css')}}" />
+  <link rel="stylesheet" href="{{asset('/partama-vera/css//animations.css')}}"/>
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <audio controls hidden muted autoplay preload="auto" src="{{asset('/partama-vera/audio/gambelan.mp3')}}" id="musicPlay"
+    onplay="handleFirstPlay(event)"></audio>
+    
+  <div class="wrapper">
+
+    <button onclick="musicControl()" class="button-play"> <i id="iconPlay" class="fa-solid fa-play"></i> </button>
+
+    <!-- Hero Section -->
+    <div class="hero-section animatedParent">
+      <img id="initial_wed" src="{{asset('/partama-vera/img/Group 41.png')}}" alt="weding_initial" class="animated fadeInUpShort" />
+
+      <a href="#profile_section" class="downscroll" id="downscroll"> Buka Undangan </a>
+    </div>
+    <!-- End of Hero -->
+
+
+
+
+    <!-- Profile section -->
+    <div class="profile-section animatedParent" id="profile_section">
+      <div class="profile-ornament">
+        <img src="{{asset('partama-vera/img/sudut1.png')}}" alt="profile-side-ornament" class="side-profile" />
+        <h1 class="animated fadeInUp">Pawiwahan</h1>
+
+        <img src="{{asset('partama-vera/img/sudut2.png')}}" alt="profile-side-ornament" class="side-profile" />
+      </div>
+      <div class="profile-greeting">
+        <p class="animated fadeInUp">
+          Malarapan antuk wahyu diatmikaning manah, titiang ngelungsur sepe
+          ngerauh ida dane ngupasaksi saha mapaica pangerestu sajeroning karya
+          pawiwahan titiang
+        </p>
+      </div>
+      <div class="profile-picture">
+        <img src="{{asset('partama-vera/img/wayan.png')}}" alt="wayan" class="animated fadeInLeft slowest" />
+        <img src="{{asset('partama-vera/img/vera.png')}}" alt="vera" class="animated fadeInRight slowest" />
+      </div>
+      <div class="profile-name">
+        <div class="animated fadeInUpShort">
+          <h3>I Wayan Partama Putra, S.H., M.H.</h3>
+          <p>
+            Putra pertama dari pasangan I Nyoman Sumaradana dan Ni Nengah
+            Suartini
+          </p>
+          <p class="address">Br. Bun, Dangin Puri, Denpasar Timur</p>
+        </div>
+        <img src=" {{asset('partama-vera/img/devider_love.png')}}" alt="devider" class="devider" />
+        <div class="animated fadeInUp">
+          <h3>Ni Kadek Pera Ariyantini, S.Pd.</h3>
+          <p>
+            Putri kedua dari pasangan
+            I Ketut Arka, S.Pd. dan Ni Nyoman Wiriyatini
+
+          </p>
+          <p class="address">Br. Kehen, Desa Kesiman Petilan, Denpasar Timur</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- End of Profile  -->
+
+    <!-- Countdown -->
+    <div class="countdown-section animatedParent">
+      <h1>Hitung Mundur Acara</h1>
+      <div class="counter-container">
+        <div class="counter-box animated fadeInLeftShort">
+          <h1 id="days"></h1>
+          <p>Hari</p>
+        </div>
+        <div class="counter-box animated fadeInDownShort">
+          <h1 id="hours">15</h1>
+          <p>Jam</p>
+        </div>
+        <div class="counter-box animated fadeInUpShort">
+          <h1 id="minutes">15</h1>
+          <p>Menit</p>
+        </div>
+        <div class="counter-box animated fadeInRightShort">
+          <h1 id="seconds">15</h1>
+          <p>Detik</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Of Countdown -->
+
+
+    <!-- Banner -->
+    <div class="information-section animatedParent">
+      <h3 class="animated fadeInUpShort">Acara & Lokasi</h3>
+      <p class="information-desc animated fadeInUpShort">Atas Anugerah dari Tuhan Yang Maha Esa kami bermaksud
+        mengundang Bapak/Ibu/Saudara/i
+        pada Acara</p>
+      <img src="{{asset('partama-vera/img/line.png')}}" alt="line-sec" class="line animated fadeIn">
+      <div class="information-timeschedule animated fadeInUpShort">
+        <h1>Rabu, 6 april 2022</h1>
+        <h2>15:00 - Selesai</h2>
+        <h3>Jl. Ceroring GG. IV No. 2 Denpasar</h3>
+      </div>
+      <img src="{{asset('partama-vera/img/line.png')}}" alt="line-sec" class="line">
+      <div class="information-button animated fadeInUpShort">
+        <a href="#mapsSection"> <button> <i class="fa-solid fa-location-dot"></i> Lihat Lokasi </button> </a>
+        <button onclick="addCalendar()"> <i class="fa-solid fa-calendar-days"></i> Tambahkan Kalender </button>
+      </div>
+      <p class="information-footer animated fadeInUpShort">Atas kehadiran serta doa restunya, kami sekeluarga
+        mengucapkan terima kasih.</p>
+    </div>
+    <!-- End of Banners -->
+
+
+    <!-- Maps  -->
+    <div class="maps-section animatedParent" id="mapsSection">
+      <h1 class="animated fadeInUpShort">Lokasi</h1>
+      <p class="animated fadeInUpShort">Jl. Ceroring GG. IV No. 2 Denpasar</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.380837844448!2d115.2212377!3d-8.655282000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b9d338d21%3A0xdc59d91d185c7f51!2sGg.%20IV%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sen!2sid!4v1648608766294!5m2!1sen!2sid"
+        allowfullscreen="" loading="lazy" class="maps-gmaps animated fadeInUpShort"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Galeri -->
+    <div class="galery-section animatedParent">
+      <h1>Gallery</h1>
+      <div class="galery-video animated fadeInUpShort">
+        <iframe src="https://www.youtube.com/embed/e9Ee4DpDOZE" title="Pratama Vera Wedding"
+          class="galery-video-youtube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="galery-photo">
+
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/1.jpeg')}});"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/2.jpg')}});"></div>
+
+        <div class="card-wide animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/3.jpg')}});"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/4.jpg')}})"></div>
+
+
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/5.jpg')}});"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/6.jpg')}});"></div>
+
+        <div class="card-wide animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/7.jpeg')}});"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/8.jpg')}});"></div>
+
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/9.jpg')}});"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/10.jpg')}});">
+        </div>
+
+        <div class="card-wide animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/11.jpg')}});
+        background-position: 0px -40px"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/12.jpg')}});">
+        </div>
+
+
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url({{url('partama-vera/img/galery/14.jpg')}});"></div>
+        <div class="card-wide animated fadeInRightShort"
+          style="background-image: url({{url('partama-vera/img/galery/18.jpg')}});background-position: 0px -120px"></div>
+
+        <div class="card-wide animated fadeInLeftShort"
+          style="background-image: url({{url('partama-vera/img/galery/15.jpg')}});background-position: 0px -90px"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url({{url('partama-vera/img/galery/14.jpg')}});">
+        </div>
+
+      </div>
+    </div>
+    <!-- End of Galery  -->
+
+    <!-- Form Whatsapp -->
+
+    <div class="form-section animatedParent">
+      <h1>Ucapan dan Doa</h1>
+      <div class="form-container">
+
+        <form action="">
+          <p>Nama</p>
+          <input type="text" name="name" id="name">
+          <p>Kehadiran</p>
+          <div class="radio-attandance">
+            <input type="radio" name="attandance" id="attandance" value="Bakal Hadir">
+            <label for="attandance"> Hadir </label>
+
+            <input type="radio" name="attandance" id="attandance" value="Masih Ragu buat datang">
+            <label for="attandance"> Ragu - Ragu</label>
+
+            <input type="radio" name="attandance" id="attandance" value="Gak Hadir">
+            <label for="attandance"> Tidak Hadir</label>
+          </div>
+          <p>Ucapan & Doa</p>
+          <Textarea id="wish"> </Textarea>
+
+        </form>
+        <button onclick="sendMassage()"> Kirim </button>
+
+      </div>
+    </div>
+
+    <!-- End of Whatsapp -->
+
+    <!-- Protocols -->
+    <div class="protocol-section animatedParent">
+      <h1 class="animated fadeInUpShort">Himbauan</h1>
+      <p class="animated fadeInUpShort">Kami menghimbau kepada Bapak/Ibu/Saudara/i yang berkesempatan dan berkenan hadir
+        pada upacara pernikahan Kami,
+        agar senantiasa mengikuti arahan Pemerintah terkait protokol kesehatan di tengah Pandemi Covid-19 ini.</p>
+      <div class="protocol-container">
+        <div class="protocol-box animated fadeInLeftShort"><img src="asset/img/masker.png" alt=""></div>
+        <div class="protocol-box animated fadeInUpShort"><img src="asset/img/cuci.png" alt=""></div>
+        <div class="protocol-box animated fadeInRightShort"><img src="asset/img/jarak.png" alt=""></div>
+      </div>
+      <p class="animated fadeInUpShort">Demi kesehatan bersama, Pastikan Bapak/Ibu/Saudara/i untuk menggunakan Masker,
+        Mencuci Tangan di area cuci
+        tangan yang telah kami sediakan, serta tetap menjaga jarak dari setiap orang yang hadir pada Upacara Pernikahan
+        Kami.</p>
+      <p class="protocol-footer animated fadeInUpShort">Atas perhatian dan kesadaran Bapak/Ibu/Saudara/i, Kami ucapkan
+        Terimakasih.</p>
+    </div>
+    <!-- End of Protocols -->
+
+
+    <!-- Greeting -->
+    <div class="greeting-section animatedParent">
+      <div class="greeting animated fadeInUpShort">
+        <h2>Sampai jumpa di </h2>
+        <h1>Hari Bahagia Kami</h1>
+      </div>
+    </div>
+    <!-- End of Greeting -->
+
+    <!-- Meriahin Section -->
+    <div class="team-section animatedParent">
+      <p>Created With <span class="animated growIn slowest">❤️</span> By</p>
+      <img class="animated fadeInUpShort" src="asset/img/meriahin.png" alt="">
+
+    </div>
+    <!-- End Of Meriahin -->
+
+
+
+  </div>
+  </div>
+
+
+  <!-- JS Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="{{asset('partama-vera/js/countdown.js')}}"></script>
+  <script src="{{asset('partama-vera/js/cover.js')}}"></script>
+  <script src="{{asset('partama-vera/js/css3-animate-it.js')}}"></script>
+  <script src="{{asset('partama-vera/js/send-massage.js')}}"></script>
+  <script src="{{asset('partama-vera/js/music.js')}}"></script>
+
+  <script>
+    
+    let hasPlayed = false;
+    function handleFirstPlay(event) {
+  if(hasPlayed === false) {
+    hasPlayed = true;
+    let vid = event.target;
+    vid.onplay = null;
+    // Start whatever you need to do after first playback has started
+  }
+}
+
+    function addCalendar() {
+      location.href =
+        "https://calendar.google.com/event?action=TEMPLATE&tmeid=MzQzOXAzaHM0N2QyaGMycTNtdXVhbDVrajYgdXZnYjJiZW9yc2xuZWY3Nmd1MnZxMDQxcWtAZw&tmsrc=uvgb2beorslnef76gu2vq041qk%40group.calendar.google.com";
+    }
+  </script>
+
+</body>
+
+</html>
