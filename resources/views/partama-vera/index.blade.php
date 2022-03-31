@@ -233,9 +233,9 @@
         pada upacara pernikahan Kami,
         agar senantiasa mengikuti arahan Pemerintah terkait protokol kesehatan di tengah Pandemi Covid-19 ini.</p>
       <div class="protocol-container">
-        <div class="protocol-box animated fadeInLeftShort"><img src="asset/img/masker.png" alt=""></div>
-        <div class="protocol-box animated fadeInUpShort"><img src="asset/img/cuci.png" alt=""></div>
-        <div class="protocol-box animated fadeInRightShort"><img src="asset/img/jarak.png" alt=""></div>
+        <div class="protocol-box animated fadeInLeftShort"><img src="{{asset('partama-vera/img/masker.png')}}" alt=""></div>
+        <div class="protocol-box animated fadeInUpShort"><img src="{{asset('partama-vera/img/cuci.png')}}" alt=""></div>
+        <div class="protocol-box animated fadeInRightShort"><img src="{{asset('partama-vera/img/jarak.png')}}" alt=""></div>
       </div>
       <p class="animated fadeInUpShort">Demi kesehatan bersama, Pastikan Bapak/Ibu/Saudara/i untuk menggunakan Masker,
         Mencuci Tangan di area cuci
