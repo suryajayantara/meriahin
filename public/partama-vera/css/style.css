@@ -420,13 +420,12 @@ body {
 
 .form-section {
   width: 100%;
-  
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.658),
       rgba(0, 0, 0, 0.445)
     ),
-    url("/asset/img/formbg.png");
+    url("../img/formbg.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -574,7 +573,7 @@ body {
       rgba(0, 0, 0, 0.616),
       rgba(0, 0, 0, 0)
     ),
-    url("/partama-vera/img/footer.png");
+    url("../img/footer.png");
 }
 
 .greeting-section .greeting {
