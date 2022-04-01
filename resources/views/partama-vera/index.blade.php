@@ -145,7 +145,7 @@
       <h1 class="animated fadeInUpShort">Lokasi</h1>
       <p class="animated fadeInUpShort">Jl. Ceroring GG. IV No. 2 Denpasar</p>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.380812759081!2d115.21895731478388!3d-8.655284393780633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd855b7dca7ddccbe!2zOMKwMzknMTkuMCJTIDExNcKwMTMnMTYuMSJF!5e0!3m2!1sen!2sid!4v1648787230151!5m2!1sen!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31555.062740239762!2d115.2087238!3d-8.6550907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241512eb69075%3A0x732e925b7ebf634c!2sJl.%20Ceroring%20No.5%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sid!2sid!4v1648788171966!5m2!1sid!2sid"
         allowfullscreen="" loading="lazy" class="maps-gmaps animated fadeInUpShort"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
