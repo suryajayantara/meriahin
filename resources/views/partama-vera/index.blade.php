@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{asset('/partama-vera/css//animations.css')}}"/>
 
 
+  <meta property="og:image" content="{{asset('partama-vera/img/galery/10.jpg')}}" />
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
